@@ -1,0 +1,19 @@
+{
+"manifest_version": 3,
+    "name": "Flácido Domingo",
+    "description": "Cambia el nombre de Plácido Domingo por Flácido Domingo",
+    "version": "1.0",
+    "icons": { "128": "icon_128.png" },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": ["activeTab"]
+}
